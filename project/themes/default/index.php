@@ -152,18 +152,15 @@ $().ready(function(){
 
 </div>
 
-
+<!--
 <h3>
  
 <span id="taskview" class="mtt-menu-button"><span class="btnstr"><?php _e('tasks');?></span> (<span id="total">0</span>) <span class="arrdown"></span></span>
-<!--
 <span class="mtt-notes-showhide"><?php _e('notes');?> <a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / <a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a></span>
--->
 <span id="mtt_filters"></span>
-<!--
 <span id="tagcloudbtn" class="mtt-menu-button"><?php _e('tagcloud');?> <span class="arrdown2"></span></span>
--->
 </h3>
+-->
 
 <div id="taskcontainer">
  <ol id="tasklist" class="sortable"></ol>
@@ -189,17 +186,22 @@ $().ready(function(){
 <div class="form-row form-row-short">
  <span class="h"><?php _e('priority');?></span>
  <select name="prio">
-  <option value="2">+2</option><option value="1">+1</option><option value="0" selected="selected">&plusmn;0</option><option value="-1">&minus;1</option>
+  <option value="2">3</option><option value="1">2</option><option value="0" selected="selected">1</option><option value="-1">undecided</option>
  </select>
 </div>
-<div class="form-row form-row-short">
- <span class="h"><?php _e('due');?> </span>
- <input name="duedate" id="duedate" value="" class="in100" title="Y-M-D, M/D/Y, D.M.Y, M/D, D.M" autocomplete="off" />
+
+<div class="form-row form-row-short" style="visibility: hidden;">
+ <span class="h"><!--<?php _e('due');?> --></span>
+ 
+ <input name="duedate" id="duedate" value=""  />
+<!-- title="Y-M-D, M/D/Y, D.M.Y, M/D, D.M" autocomplete="off" class="in100" -->
 </div>
+
 <div class="form-row-short-end"></div>
 <div class="form-row"><div class="h"><?php _e('task');?></div> <input type="text" name="task" value="" class="in500" maxlength="250" /></div>
 <div class="form-row"><div class="h"><?php _e('note');?></div> <textarea name="note" class="in500"></textarea></div>
-<div class="form-row"><div class="h"><?php _e('tags');?></div>
+<div class="form-row" style="visibility: hidden;">
+  <div class="h"><?php _e('tags');?></div>
  <table cellspacing="0" cellpadding="0" width="100%"><tr>
   <td><input type="text" name="tags" id="edittags" value="" class="in500" maxlength="250" /></td>
   <td class="alltags-cell">
@@ -226,10 +228,10 @@ $().ready(function(){
 </div>
 
 <div id="priopopup" style="display:none">
- <span class="prio-neg prio-neg-1">&minus;1</span>
- <span class="prio-zero">&plusmn;0</span>
- <span class="prio-pos prio-pos-1">+1</span>
- <span class="prio-pos prio-pos-2">+2</span>
+ <span class="prio-neg prio-neg-1">undecide</span>
+ <span class="prio-zero">1</span>
+ <span class="prio-pos prio-pos-1">2</span>
+ <span class="prio-pos prio-pos-2">3</span>
 </div>
 
 <div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
@@ -287,10 +289,10 @@ $().ready(function(){
 
 <div id="cmenupriocontainer" class="mtt-menu-container" style="display:none">
 <ul>
- <li id="cmenu_prio:2"><div class="menu-icon"></div>+2</li>
- <li id="cmenu_prio:1"><div class="menu-icon"></div>+1</li>
- <li id="cmenu_prio:0"><div class="menu-icon"></div>&plusmn;0</li>
- <li id="cmenu_prio:-1"><div class="menu-icon"></div>&minus;1</li>
+ <li id="cmenu_prio:2"><div class="menu-icon"></div>3</li>
+ <li id="cmenu_prio:1"><div class="menu-icon"></div>2</li>
+ <li id="cmenu_prio:0"><div class="menu-icon"></div>1</li>
+ <li id="cmenu_prio:-1"><div class="menu-icon"></div>0</li>
 </ul>
 </div>
 
