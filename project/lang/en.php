@@ -7,8 +7,8 @@ class Lang extends DefaultLang
 	(
 		'confirmDelete' => "Are you sure you want to delete the story?",
 		'confirmLeave' => "There can be unsaved data. Do you really want to leave?",
-		'actionNoteSave' => "save",
-		'actionNoteCancel' => "cancel",
+		'actionNoteSave' => "Save",
+		'actionNoteCancel' => "Cancel",
 		'error' => "Some error occurred (click for details)",
 		'denied' => "Access denied",
 		'tagfilter' => "Tag:",
@@ -69,7 +69,7 @@ class Lang extends DefaultLang
 		'alltags_show' => "Show all",
 		'alltags_hide' => "Hide all",
 		'a_settings' => "Settings",
-		'alltasks' => "All story",
+		'alltasks' => "Backlog",
 
 		/* Settings */
 		'set_header' => "Settings",
@@ -99,6 +99,6 @@ class Lang extends DefaultLang
 		'set_24hour' => "24-hour",
 		'set_submit' => "Submit changes",
 		'set_cancel' => "Cancel",
-		'set_showdate' => "Show task date in list",
+		'set_showdate' => "Show task date in the sprint",
 	);
 }

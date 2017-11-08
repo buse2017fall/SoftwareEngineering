@@ -211,7 +211,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <div class="form-row form-row-short">
  <span class="h"><?php _e('priority');?></span>
  <select name="prio">
-  <option value="2">3</option><option value="1">2</option><option value="0" selected="selected">1</option><option value="-1">undecided</option>
+  <option value="3">3</option><option value="2">2</option><option value="1" selected="selected">1</option><option value="0">undecided</option>
  </select>
 </div>
 
@@ -244,10 +244,10 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
 
 <div id="priopopup" style="display:none">
- <span class="prio-neg prio-neg-1">undecide</span>
- <span class="prio-zero">1</span>
- <span class="prio-pos prio-pos-1">2</span>
- <span class="prio-pos prio-pos-2">3</span>
+ <span class="prio-zero">Undecide</span>
+ <span class="prio-pos prio-pos-1">1</span>
+ <span class="prio-pos prio-pos-2">2</span>
+ <span class="prio-pos prio-pos-3">3</span>
 </div>
 
 
