@@ -101,19 +101,19 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
  <div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div>
  <div class="bar-menu">
   
- <!-- 
+ 
  <span class="menu-owner" style="display:none">
  
    <a href="#settings" id="settings"><?php _e('a_settings');?></a>
 
  </span>
--->
+
 
  <span class="bar-delim" style="display:none"> | </span>
  <span id="bar_auth">
   <span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
-  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('login');?></u> <span class="arrdown"></span></a>
-  <a href="#logout" id="bar_logout"><?php _e('logout');?></a>
+  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('admin_login');?></u> <span class="arrdown"></span></a>
+  <a href="#logout" id="bar_logout"><?php _e('admin_logout');?></a>
  </span>
  </div>
 </div>
@@ -300,8 +300,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <div id="space"></div>
 </div>
 
-<!---<div id="footer"><div id="footer_content">Powered by Team3 for Software Engineering Course</a></strong> 1.4.3 </div></div>-->
-
+<div id="footer" style="width:800px; margin:0 auto;"><!--<div id="footer_content">-->You have logged into password protected page. <a href="../logout.php">Click here</a> to Logout. <!--</div>--></div>
 </div>
 </body>
 </html>
