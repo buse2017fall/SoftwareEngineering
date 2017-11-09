@@ -101,13 +101,13 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
  <div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div>
  <div class="bar-menu">
   
- 
+ <!--
  <span class="menu-owner" style="display:none">
  
    <a href="#settings" id="settings"><?php _e('a_settings');?></a>
 
  </span>
-
+-->
 
  <span class="bar-delim" style="display:none"> | </span>
  <span id="bar_auth">
@@ -241,6 +241,15 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 </form>
 
 </div>  <!-- end of page_taskedit -->
+
+
+<div id="authform" style="display:none">
+<form id="login_form">
+ <div class="h"><?php _e('password');?></div>
+ <div><input type="password" name="password" id="password" /></div>
+ <div><input type="submit" value="<?php _e('admin_login');?>" /></div>
+</form>
+</div>
 
 
 <div id="priopopup" style="display:none">
