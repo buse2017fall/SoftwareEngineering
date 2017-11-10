@@ -10,7 +10,7 @@ Technical Stack: LAMP (Linux + Apache + MySql + Php)
 
 Host: Digital Ocean 
 
-Please visit: http://192.34.56.254/project
+Please visit: http://192.34.56.254
 
 Main purpose : provide a more user friendly too for project management for a small team 
 

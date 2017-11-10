@@ -260,6 +260,16 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 </div>
 
 
+<div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
+<ul>
+ <li id="view_tasks"><?php _e('tasks');?> (<span id="cnt_total">0</span>)</li>
+ <li id="view_past"><?php _e('f_past');?> (<span id="cnt_past">0</span>)</li>
+ <li id="view_today"><?php _e('f_today');?> (<span id="cnt_today">0</span>)</li>
+ <li id="view_soon"><?php _e('f_soon');?> (<span id="cnt_soon">0</span>)</li>
+</ul>
+</div>
+
+
 
 <div id="tagcloud" style="display:none">
  <a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
@@ -303,13 +313,19 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 </ul>
 </div>
 
+
+
+
 <div id="page_ajax" style="display:none"></div>
+
+
 
 </div>
 <div id="space"></div>
 </div>
 
-<div id="footer" style="width:800px; margin:0 auto;"><!--<div id="footer_content">-->You have logged into password protected page. <a href="../logout.php">Click here</a> to Logout. <!--</div>--></div>
+<div id="footer" style="text-align: center;"><!--<div id="footer_content">-->You have logged into password protected page. <a href="../logout.php">Click here</a> to Logout. <!--</div>--></div>
+
 </div>
 </body>
 </html>
