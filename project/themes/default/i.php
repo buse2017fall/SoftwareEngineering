@@ -101,13 +101,13 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
  <div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div>
  <div class="bar-menu">
   
-
+ <!--
  <span class="menu-owner" style="display:none">
  
    <a href="#settings" id="settings"><?php _e('a_settings');?></a>
 
  </span>
-
+-->
 
  <span class="bar-delim" style="display:none"> | </span>
  <span id="bar_auth">
@@ -123,9 +123,6 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
 <div id="page_tasks" style="display:none">
 
-
-
-
 <div id="lists">
  <ul class="mtt-tabs"></ul>
 
@@ -138,16 +135,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
   </a></div>
 </div>
 
-<!--
-<div id="lists">
- <ul class="mtt-tabs"></ul>
- <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>"><span></span></div>
- <div id="tabs_buttons">
-  <div class="mtt-tabs-select-button mtt-tabs-button" title="<?php _e('list_select'); ?>"><span></span></div>
- </div>
- <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden"><a href="#alltasks"><span><?php _e('alltasks'); ?></span><div class="list-action"></div></a></div>
-</div>
--->
+
 
 <div id="toolbar" class="mtt-htabs">
 
