@@ -1,10 +1,5 @@
 <?php
 
-/*
-	This file is part of myTinyTodo.
-	(C) Copyright 2009-2010 Max Pozdeev <maxpozdeev@gmail.com>
-	Licensed under the GNU GPL v2 license. See file COPYRIGHT for details.
-*/
 
 $dontStartSession = 1;
 require_once('./init.php');
